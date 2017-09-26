@@ -1,0 +1,9 @@
+% layout 'default';
+% title 'Welcome';
+<h2>Run App</h2>
+<p>
+%= form_for run => (method => 'POST') => begin
+  %= text_field 'cmd'
+  %= submit_button
+% end
+</p>

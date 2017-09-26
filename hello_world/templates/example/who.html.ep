@@ -1,0 +1,6 @@
+% layout 'default';
+% title 'Welcome';
+<h2>Connected Users</h2>
+%= t pre => join('', @$who)
+
+<p><%= link_to 'Back Home', url_for('home') %></p>

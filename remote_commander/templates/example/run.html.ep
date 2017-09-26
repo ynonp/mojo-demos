@@ -1,0 +1,8 @@
+% layout 'default';
+% title 'Welcome';
+<h2>Result:</h2>
+<p>
+%= t pre => join('', @$result)
+%= link_to 'home', url_for('home')
+</p>
+

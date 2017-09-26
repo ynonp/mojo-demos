@@ -1,0 +1,15 @@
+% layout 'default';
+% title 'Welcome';
+<h2>Result</h2>
+
+%= t pre => (id => 'result') => $result
+
+<script>
+const progressSocket = new WebSocket("ws://localhost:3000/progress");
+const panel = document.querySelector('#result');
+
+progressSocket.onmessage = function(event) {
+  panel.textContent += event.data;
+};
+</script>
+

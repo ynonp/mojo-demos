@@ -1,0 +1,16 @@
+% layout 'default';
+% title 'Welcome';
+<h2>Connected Users</h2>
+
+<table>
+% for (@$who) {
+%   my @columns = split;
+%=  tag tr => begin
+%   for (@columns) {
+%=    tag td => $_
+%   }
+%   end
+% }
+</table>
+
+<p><%= link_to 'Back Home', url_for('home') %></p>

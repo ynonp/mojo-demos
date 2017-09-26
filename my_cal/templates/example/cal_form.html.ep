@@ -1,0 +1,17 @@
+% layout 'default';
+% title 'Welcome';
+<h2>Calendar Generator</h2>
+<p>
+%= form_for cal => begin
+%= label_for mon => 'Month'
+%= select_field mon => $months_for_select
+%= label_for year => 'Year'
+%= text_field year => 2017
+%= submit_button
+%= end
+
+</p>
+<p>
+%= image $cal_img
+</p>
+

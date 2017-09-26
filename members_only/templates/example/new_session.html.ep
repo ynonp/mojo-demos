@@ -1,0 +1,16 @@
+% layout 'default';
+% title 'Welcome';
+<h2>Login</h2>
+
+<p>
+<%= stash "error" %>
+</p>
+<p>
+%= form_for login => (method => 'POST') => begin
+%= label_for username => 'Username'
+%= text_field 'username'
+%= label_for password => 'Password'
+%= password_field 'password'
+%= submit_button
+% end
+</p>
